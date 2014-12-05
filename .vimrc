@@ -26,8 +26,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 
-" plugins from http://vim-scripts.org/vim/scripts.html
-Plugin 'CSApprox'
 
 " Git plugin not hosted on GitHub
 "Plugin 'git://git.wincent.com/command-t.git'
@@ -137,15 +135,6 @@ set wildmenu
 set wildignorecase
 
 
-" CSApprox
-"if &term =~ '^\(xterm\|screen\)$' && $COLORTERM == 'gnome-terminal'
-"    set t_Co=256
-"endif
-" set it unconditionally
-" TODO research for a better way
-set t_Co=256
-
-
 """ disable cursor blinking
 " http://vim.wikia.com/wiki/Configuring_the_cursor#Disabling_cursor_blinking
 "set guicursor+=a:blinkon0
@@ -167,13 +156,12 @@ set incsearch
 " http://stackoverflow.com/questions/235439/vim-80-column-layout-concerns
 " http://vim.wikia.com/wiki/Highlight_long_lines
 """ set a marker on the 81th text column
-set colorcolumn=81
+"set colorcolumn=81
 """ highlight text longer than 80 characters
 " disable with :match
 " TODO
 " use a function and shortcuts to enable and disable it
-"match ErrorMsg '\%>80v.\+'
-
+match ErrorMsg '\%>80v.\+'
 
 """ folds
 " automatic folds based on syntax
