@@ -2,6 +2,7 @@
 
 """ Vundle
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set background=dark
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
